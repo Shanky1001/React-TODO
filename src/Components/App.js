@@ -36,6 +36,7 @@ const id = Math.floor(Math.random()* 100)+1;
 const newTask = {id,task,check};
 setTasks([...tasks,newTask]);
 }
+
 // Toggle Check Uncheck
 const toggleCheck = (id) =>{
   setTasks(tasks.map((val)=>val.id === id ? {...val,check: !val.check}:val))

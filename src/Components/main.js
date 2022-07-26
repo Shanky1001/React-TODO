@@ -10,10 +10,12 @@ const Main = ({tasks,onDelete,onEdit,onAdd,onToggle}) => {
         const x = document.querySelector('.btn').innerText;
         if(!task){
             alert("Task input field can't be empty");
+        }else{
+            x === 'Update' ? onEdit(id,task) : onAdd(task,check);
+            setTask('');
+            document.querySelector('.btn').innerText = "Add";
         }
-        x === 'Update' ? onEdit(id,task) : onAdd(task,check);
-        setTask('');
-        document.querySelector('.btn').innerText = "Add";
+       
     }
     const onEd = (id,text)=>{
         setTask(text);
