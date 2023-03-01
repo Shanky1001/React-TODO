@@ -44,7 +44,7 @@ const toggleCheck = (id) =>{
 
 
   return (
-   <><Main tasks={tasks} onDelete={deleteTask} onEdit={editTask} onAdd={addTask} onToggle={toggleCheck} /></>
+   <Main tasks={tasks} onDelete={deleteTask} onEdit={editTask} onAdd={addTask} onToggle={toggleCheck} />
   )
 }
 
